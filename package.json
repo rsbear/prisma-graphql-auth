@@ -1,0 +1,26 @@
+{
+  "name": "api-git",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -e js,graphql -x node -r dotenv/config src/index.js",
+    "debug": "nodemon -e js,graphql -x node --inspect -r dotenv/config src/index.js",
+    "nodemon": "nodemon"
+  },
+  "repository": "https://github.com/rsbear/prisma-graphql-auth.git",
+  "author": "rsbear <broderross@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-server-express": "^2.4.8",
+    "bcryptjs": "^2.4.3",
+    "express": "^4.16.4",
+    "graphql": "^14.1.1",
+    "jsonwebtoken": "^8.5.0",
+    "prisma": "^1.27.4",
+    "prisma-client-lib": "^1.27.4"
+  },
+  "devDependencies": {
+    "dotenv": "^6.2.0",
+    "nodemon": "^1.18.10"
+  }
+}
