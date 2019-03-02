@@ -7,6 +7,7 @@ const schema = gql`
 
   type Mutation {
     signup(email: String!, name: String!, password: String!): AuthPayload
+    login(email: String!, password: String!): AuthPayload
   }
 
   type AuthPayload {
