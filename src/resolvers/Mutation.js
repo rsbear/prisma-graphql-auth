@@ -1,5 +1,5 @@
 const { prisma } = require("./../generated/prisma-client");
-const { hash, compare } = require("bcrypt");
+const { hash, compare } = require("bcryptjs");
 const { sign } = require("jsonwebtoken");
 
 const Mutation = {
