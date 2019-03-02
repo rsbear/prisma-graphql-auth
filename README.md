@@ -26,7 +26,7 @@ yarn start
 
 ---
 
-## Link it to a project
+## Link it to React
 
 #### Next.Js
 
