@@ -1,13 +1,14 @@
 const { prisma } = require("./../generated/prisma-client");
 const { hash, compare } = require("bcryptjs");
 const { sign } = require("jsonwebtoken");
+const { APP_SECRET } = require("./../utils");
 
 const Mutation = {
-  signup: async (parent, { name, email, password }, context) => {
+  signup: async (parent, { email, name, password }, context) => {
     const hashedPassword = await hash(password, 10);
     const user = await context.prisma.createUser({
-      name,
       email,
+      name,
       password: hashedPassword
     });
     return {
