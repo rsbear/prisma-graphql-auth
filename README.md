@@ -12,6 +12,12 @@ This is a server boilerplate created for a Next.js or React project. It has basi
 docker-compose up -d
 ```
 
+#### Generate Prisma
+
+```
+prisma deploy
+```
+
 #### Install dependencies
 
 ```
