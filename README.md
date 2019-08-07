@@ -27,11 +27,9 @@ yarn start
 ---
 
 ## Link it to React
-
 #### Next.Js
 
-(link coming soon)
+[next-prisma-auth](https://github.com/rsbear/next-prisma-auth)
 
 #### Create React App
-
-(link coming soon)
+[react-prisma-auth](https://github.com/rsbear/react-prisma-auth)
